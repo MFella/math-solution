@@ -1,0 +1,24 @@
+{
+  "name": "task0",
+  "version": "1.0.0",
+  "description": "simple task for ethworks company(junior js dev)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Cezary Wrzesinski",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}
