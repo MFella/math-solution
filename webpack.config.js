@@ -6,6 +6,6 @@ module.exports = {
         filename: 'js/bundle.js'
     },
     devServer: {
-        contentBase: './dist'
+        contentBase: './src'    //should be changed to dist(in future)
     }
 };
