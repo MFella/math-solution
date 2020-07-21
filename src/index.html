@@ -1,11 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style type="text/css" id="dark-mode-custom-style"></style><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    
-</body>
-</html>
+
+
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="coef1">Coefficients of first expression</label>
+                    <input type="text" class="form-control" id="coef1" aria-describedby="emailHelp" placeholder="Type: -12,4.23,-0.999,1,0.12,...">
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exp1">Exponents of first expression</label>
+                    <input type="text" class="form-control" id="exp1" aria-describedby="emailHelp" placeholder="Type: 3,2,-1,0,0.12,...">
+              </div>
+            </div>
+            <hr>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="coef2">Coefficients of second expression</label>
+                    <input type="text" class="form-control" id="coef2" aria-describedby="emailHelp" placeholder="Type: -12,4.23,-0.999,1,0.12,...">
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exp2">Exponents of second expression</label>
+                    <input type="text" class="form-control" id="exp2" aria-describedby="emailHelp" placeholder="Type: 3,2,-1,0,0.12,...">
+              </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-warning" id="solve">Solve</button>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control solution" aria-describedby="emailHelp" placeholder="Solution" disabled="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card text-black bg-info mb-3">
+                    <div class="card-header">About the usage</div>
+                    <div class="card-body">                
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">Number of exponents(in first expression) must match with number of coefficients(in first expression).</li>
+                            <li class="list-group-item list-group-item-info">Number of exponents(in second expression) must match with number of coefficients(in second expression).</li>                            
+                            <li class="list-group-item list-group-item-info">Exponent equal 0 means constant term.</li>
+                            <li class="list-group-item list-group-item-info">
+                                Separator in every input should be ','(csv).</li>
+                        </ul>  
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bundle.js"></script>
+
+</body></html>
